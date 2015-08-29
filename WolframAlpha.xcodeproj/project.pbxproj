@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3028E1871B91F58A0049C825 /* QueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028E1861B91F58A0049C825 /* QueryBuilder.swift */; settings = {ASSET_TAGS = (); }; };
+		3028E1891B91F6690049C825 /* ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3028E1881B91F6690049C825 /* ResultType.swift */; settings = {ASSET_TAGS = (); }; };
 		30521A001B91DBE6000814E9 /* WolframAlpha.h in Headers */ = {isa = PBXBuildFile; fileRef = 305219FF1B91DBE6000814E9 /* WolframAlpha.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		30521A071B91DBE6000814E9 /* WolframAlpha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305219FC1B91DBE6000814E9 /* WolframAlpha.framework */; settings = {ASSET_TAGS = (); }; };
-		30521A0C1B91DBE6000814E9 /* WolframAlphaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30521A0B1B91DBE6000814E9 /* WolframAlphaTests.swift */; };
+		30521A0C1B91DBE6000814E9 /* ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30521A0B1B91DBE6000814E9 /* ClientTests.swift */; };
+		30521A181B91E960000814E9 /* WolframAlpha.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30521A161B91E960000814E9 /* WolframAlpha.swift */; settings = {ASSET_TAGS = (); }; };
+		30521A1F1B91EA95000814E9 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30521A1E1B91EA95000814E9 /* XMLParser.swift */; settings = {ASSET_TAGS = (); }; };
+		30521A211B91EAC1000814E9 /* XMLElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30521A201B91EAC1000814E9 /* XMLElement.swift */; settings = {ASSET_TAGS = (); }; };
+		30521A231B91ED63000814E9 /* XMLElement+Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30521A221B91ED63000814E9 /* XMLElement+Internal.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +29,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3028E1861B91F58A0049C825 /* QueryBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueryBuilder.swift; sourceTree = "<group>"; };
+		3028E1881B91F6690049C825 /* ResultType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultType.swift; sourceTree = "<group>"; };
 		305219FC1B91DBE6000814E9 /* WolframAlpha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WolframAlpha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		305219FF1B91DBE6000814E9 /* WolframAlpha.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WolframAlpha.h; sourceTree = "<group>"; };
 		30521A011B91DBE6000814E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30521A061B91DBE6000814E9 /* WolframAlphaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WolframAlphaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		30521A0B1B91DBE6000814E9 /* WolframAlphaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolframAlphaTests.swift; sourceTree = "<group>"; };
+		30521A0B1B91DBE6000814E9 /* ClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientTests.swift; sourceTree = "<group>"; };
 		30521A0D1B91DBE6000814E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30521A161B91E960000814E9 /* WolframAlpha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WolframAlpha.swift; sourceTree = "<group>"; };
+		30521A1E1B91EA95000814E9 /* XMLParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XMLParser.swift; path = XML/XMLParser.swift; sourceTree = "<group>"; };
+		30521A201B91EAC1000814E9 /* XMLElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = XMLElement.swift; path = XML/XMLElement.swift; sourceTree = "<group>"; };
+		30521A221B91ED63000814E9 /* XMLElement+Internal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "XMLElement+Internal.swift"; path = "XML/XMLElement+Internal.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +83,12 @@
 		305219FE1B91DBE6000814E9 /* WolframAlpha */ = {
 			isa = PBXGroup;
 			children = (
-				305219FF1B91DBE6000814E9 /* WolframAlpha.h */,
 				30521A011B91DBE6000814E9 /* Info.plist */,
+				305219FF1B91DBE6000814E9 /* WolframAlpha.h */,
+				30521A161B91E960000814E9 /* WolframAlpha.swift */,
+				3028E1861B91F58A0049C825 /* QueryBuilder.swift */,
+				3028E1881B91F6690049C825 /* ResultType.swift */,
+				30521A1B1B91EA3A000814E9 /* XML */,
 			);
 			path = WolframAlpha;
 			sourceTree = "<group>";
@@ -80,10 +96,20 @@
 		30521A0A1B91DBE6000814E9 /* WolframAlphaTests */ = {
 			isa = PBXGroup;
 			children = (
-				30521A0B1B91DBE6000814E9 /* WolframAlphaTests.swift */,
+				30521A0B1B91DBE6000814E9 /* ClientTests.swift */,
 				30521A0D1B91DBE6000814E9 /* Info.plist */,
 			);
 			path = WolframAlphaTests;
+			sourceTree = "<group>";
+		};
+		30521A1B1B91EA3A000814E9 /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				30521A201B91EAC1000814E9 /* XMLElement.swift */,
+				30521A221B91ED63000814E9 /* XMLElement+Internal.swift */,
+				30521A1E1B91EA95000814E9 /* XMLParser.swift */,
+			);
+			name = XML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +168,7 @@
 		305219F31B91DBE6000814E9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Roman Roibu";
 				TargetAttributes = {
@@ -193,6 +220,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30521A1F1B91EA95000814E9 /* XMLParser.swift in Sources */,
+				30521A211B91EAC1000814E9 /* XMLElement.swift in Sources */,
+				3028E1871B91F58A0049C825 /* QueryBuilder.swift in Sources */,
+				30521A181B91E960000814E9 /* WolframAlpha.swift in Sources */,
+				3028E1891B91F6690049C825 /* ResultType.swift in Sources */,
+				30521A231B91ED63000814E9 /* XMLElement+Internal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30521A0C1B91DBE6000814E9 /* WolframAlphaTests.swift in Sources */,
+				30521A0C1B91DBE6000814E9 /* ClientTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,28 +340,33 @@
 		30521A111B91DBE6000814E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = WolframAlpha/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.romanroibu.swift.WolframAlpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		30521A121B91DBE6000814E9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = WolframAlpha/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.romanroibu.swift.WolframAlpha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -375,6 +413,7 @@
 				30521A121B91DBE6000814E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		30521A131B91DBE6000814E9 /* Build configuration list for PBXNativeTarget "WolframAlphaTests" */ = {
 			isa = XCConfigurationList;
@@ -383,6 +422,7 @@
 				30521A151B91DBE6000814E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
