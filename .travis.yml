@@ -1,0 +1,7 @@
+language: objective-c
+xcode_project: WolframAlpha.xcodeproj
+xcode_scheme: WolframAlpha
+branches:
+  only:
+    - master
+    - /^deploy-.*$/
