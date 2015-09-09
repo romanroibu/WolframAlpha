@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = 'WolframAlpha'
   s.version = '0.1.1'
-  s.license = 'MIT'
+  s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.summary = 'WolframAlpha API client for Swift 2.0'
   s.homepage = 'https://github.com/romanroibu/WolframAlpha'
   s.authors = { 'Roman Roibu' => 'roman.roibu@gmail.com' }
